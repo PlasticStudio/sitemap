@@ -46,7 +46,7 @@ class XMLSitemap extends Page {
 				$XMLSitemap->Content = '';
 				$XMLSitemap->URLSegment = 'sitemap';
 				$XMLSitemap->write();
-				$XMLSitemap->publish('Stage', 'Live');
+				$XMLSitemap->publishRecursive();
 				$XMLSitemap->flushCache();
 				DB::alteration_message('Sitemap XML page created', 'created');
 			}
