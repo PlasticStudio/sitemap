@@ -9,8 +9,8 @@ use SilverStripe\ORM\DB;
 class XMLSitemap extends Page {
 
 	private static $allowed_children = 'none';
-	private static $description = 'Adds an XML sitemap generated from the site tree';
-	private static $icon_class = 'font-icon-sitemap';
+	private static $class_description = 'Adds an XML sitemap generated from the site tree';
+	private static $cms_icon_class = 'font-icon-sitemap';
 	private static $table_name = 'XMLSitemap';
 	
 	private static $db = [];
