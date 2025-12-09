@@ -2,11 +2,11 @@
 
 namespace PlasticStudio\Sitemap\Extensions;
 
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use Silverstripe\Forms\FieldList;
 use Silverstripe\Forms\CheckBoxField;
 
-class SitemapSiteConfigExtension extends DataExtension {
+class SitemapSiteConfigExtension extends Extension {
      
 	private static $db = [	
 		'DoNotIndex' => 'Boolean'
