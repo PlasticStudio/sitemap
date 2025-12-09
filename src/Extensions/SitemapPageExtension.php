@@ -2,13 +2,13 @@
 
 namespace PlasticStudio\Sitemap\Extensions;
 
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use Silverstripe\Forms\FieldList;
 use Silverstripe\Forms\CheckBoxField;
 use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\SiteConfig\SiteConfig;
 
-class SitemapPageExtension extends DataExtension {
+class SitemapPageExtension extends Extension {
      
 	private static $db = [	
 		'ExcludeFromSitemap' => 'Boolean',
